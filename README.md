@@ -2,7 +2,29 @@
 
 **Nom du projet** : Perfect PC
 
-## Membres du projet
+## Description
+
+Ce projet consiste en une application autonome Android permettant de commander des PC sur mesure. Elle gère plusieurs rôles :
+
+Requester : Création et gestion des commandes de PC personnalisés.
+
+StoreKeeper : Gestion du stock de composants matériels et logiciels.
+
+Assembler : Validation et assemblage des commandes.
+
+Administrator : Gestion des utilisateurs de l'application.
+
+**Technologies utilisées**
+
+Langage : Java
+
+IDE : Android Studio
+
+Base de données : SQLite
+
+UI : Material Design avec RecyclerView
+
+### Membres du projet
 
 | Prénom        | NOM           | Identifiant GitHub |
 | ------------- | ------------- | ------------------ |
@@ -20,4 +42,3 @@
 
 
 
-Aucune anomalie,  toutes les fonctionnalités ont été inclus.
