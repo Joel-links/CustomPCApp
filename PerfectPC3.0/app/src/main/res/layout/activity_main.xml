@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Logo de uOttawa -->
+    <ImageView
+        android:id="@+id/uottawa_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/uottawa_logo"
+        android:contentDescription="Logo uOttawa" />
+
+    <!-- Nom du projet : PerfectPC -->
+    <TextView
+        android:id="@+id/project_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PerfectPC"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- Champ d'adresse électronique -->
+        <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:importantForAutofill="yes"
+        android:autofillHints="emailAddress"
+        android:layout_marginTop="16dp" />
+
+    <!-- Champ de mot de passe -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:importantForAutofill="yes"
+        android:autofillHints="password"
+        android:layout_marginTop="16dp" />
+
+
+
+    <!-- Bouton de connexion -->
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connexion"
+        android:layout_marginTop="24dp" />
+</LinearLayout>

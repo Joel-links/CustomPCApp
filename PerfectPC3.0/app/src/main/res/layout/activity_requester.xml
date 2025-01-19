@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/requester_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="NOTRE STOCK"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_view_stock"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="16dp"
+        tools:listitem="@layout/component_list"/>
+
+    <Button
+        android:id="@+id/view_commande"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Voir mes commandes"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

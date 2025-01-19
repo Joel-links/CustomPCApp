@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">PerfectPC</string>
+    <string name="login_button">Connexion</string>
+    <string name="email_hint">Adresse électronique</string>
+    <string name="password_hint">Mot de passe</string>
+    <string name="login_success">Connexion réussie</string>
+    <string name="login_failure">E-mail ou mot de passe incorrect</string>
+
+    <!-- Nouveaux ajouts -->
+    <string name="first_name_hint">Prénom</string>
+    <string name="last_name_hint">Nom de famille</string>
+    <string name="components">Components</string>
+    <string name="type">Type</string>
+    <string name="plus">+</string>
+    <string name="moins">-</string>
+    <string name="quantity">Quantity</string>
+    <string name="subtype">subType</string>
+    <string name="title">Title</string>
+    <string name="quantit_0">Quantité: 0</string>
+    <string name="sous_type">Sous-type</string>
+    <string name="types">Type</string>
+    <string name="titre">Titre</string>
+    <string name="component">Components</string>
+    <string name="ajouter_un_composant">Ajouter un composant</string>
+    <string name="gestion_de_stock">Gestion de stock</string>
+    <string name="add_title">Titre</string>
+    <string name="add_type">Type</string>
+    <string name="add_sous_type">Sous type</string>
+    <string name="add_sub_type">Sous type</string>
+    <string name="ajouter_un_element">Ajouter un élément</string>
+    <string name="add_title_">Sous type</string>
+    <string name="add_sub_type_">Titre</string>
+    <string name="add_a_title">Type</string>
+    <string name="add_type_">Sous-type</string>
+</resources>

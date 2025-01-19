@@ -1,0 +1,75 @@
+@startuml App
+
+Interface ManageStock{
+    addComponent(): void
+    modifyComponent(): void
+    getStockList(): List<Component>
+
+}
+
+Interface ManageOrder{
+    createOrder(): String
+}
+
+class Requester extends User implements ManageOrder{
+    
+}
+
+abstract class User{
+    firstName: String
+    lastName: String
+    email: String
+    password: String
+    accountcreationDateAndTime: DateAndTime
+    modificationDateAndTime: DateAndTime
+    login(): void
+    logout(): void
+
+}
+
+class Administrator extends User{
+    addUser(): String
+    deleteUser(): void
+    modifyUser(): void
+}
+
+class Assembler extends User implements ManageStock{
+    takeOrder(): String
+    assemblePC(): void
+    orderState: String
+    rejectOrder(): String
+    viewAllOrder(): String
+    changeOrderState(): String
+    addComment(): String
+
+}
+
+class StoreKeeper extends User implements ManageStock{
+    UupdateComponentList(): void
+}
+
+abstract class Order{
+    orderDate: Date
+    orderTime: Time
+    viewOrderState(): String
+    deleteOrder():void
+
+}
+
+class Component extends Order{
+    type: String
+    title: String
+    subType: String
+    quantity: int
+    comment: String
+    createdDate(): LocalDateTime
+    updatedDate(): LocalDateTime
+
+}
+
+
+Requester"1"-"*"Order: "order(Requester-->Order)"
+Assembler"1"---"*"Order: "manage(Assembler-->Order)"
+Administrator"1"-"*"Requester: "manage(Administrator-->Requester)"
+
+@enduml

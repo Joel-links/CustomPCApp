@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/commande_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID de la Commande"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/commande_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom de l'Article"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/commande_created_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Créé le :"
+        android:textSize="14sp"
+        android:textColor="#757575" />
+
+    <TextView
+        android:id="@+id/commande_updated_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mis à jour le :"
+        android:textSize="14sp"
+        android:textColor="#757575" />
+</LinearLayout>

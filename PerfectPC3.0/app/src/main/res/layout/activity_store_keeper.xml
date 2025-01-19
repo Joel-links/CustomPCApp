@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Message de confirmation -->
+    <TextView
+        android:id="@+id/Gestion_de_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gestion_de_stock"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="16dp"/>
+
+    <Button
+        android:id="@+id/add_component_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ajouter_un_element"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+
+</LinearLayout>

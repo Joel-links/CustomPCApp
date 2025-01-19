@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Titre de l'écran -->
+    <TextView
+        android:id="@+id/admin_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gestion des utilisateurs Requester"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Bouton pour ajouter un utilisateur -->
+    <Button
+        android:id="@+id/add_user_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter un utilisateur"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Bouton pour vider la base de données -->
+    <Button
+        android:id="@+id/clear_database_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vider la base de données"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Bouton pour réinitialiser la base de données -->
+    <Button
+        android:id="@+id/reset_database_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Réinitialiser la base de données"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Bouton pour réinitialiser le stock -->
+    <Button
+        android:id="@+id/reset_stock_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Réinitialiser le stock"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Liste des utilisateurs Requester -->
+    <ListView
+        android:id="@+id/user_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

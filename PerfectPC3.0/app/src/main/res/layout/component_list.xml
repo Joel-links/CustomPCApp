@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/viewtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/titre"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/viewtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/types"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/viewsubtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/sous_type"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantit_0"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/decrement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/moins"
+            android:minWidth="48dp"/>
+
+        <Button
+            android:id="@+id/increment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus"
+            android:minWidth="48dp"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+</LinearLayout>

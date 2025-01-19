@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Bouton pour accepter la commande -->
+    <Button
+        android:id="@+id/accept_commande"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accepter"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Bouton pour refuser la commande -->
+    <Button
+        android:id="@+id/refuse_commande"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Refuser"
+        android:backgroundTint="#F44336"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Bouton pour terminer la commande -->
+    <Button
+        android:id="@+id/complete_commande"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terminer"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

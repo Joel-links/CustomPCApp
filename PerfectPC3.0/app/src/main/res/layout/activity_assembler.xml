@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- En-tête pour la section du stock -->
+    <TextView
+        android:id="@+id/stock_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stock Disponible"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="8dp" />
+
+    <!-- RecyclerView pour afficher le stock -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_stock"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="16dp" />
+
+    <!-- En-tête pour la section des commandes -->
+    <TextView
+        android:id="@+id/commandes_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Commande"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="8dp" />
+
+    <!-- RecyclerView pour afficher les commandes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_commandes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>

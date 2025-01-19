@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Champ de l'identifiant -->
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Identifiant (facultatif)"
+        android:inputType="textAutoCorrect"
+        android:importantForAutofill="yes"
+        android:autofillHints="name" />
+
+    <!-- Champ de l'élément -->
+    <EditText
+        android:id="@+id/component_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Nom de l'élément"
+        android:inputType="textAutoCorrect"
+        android:importantForAutofill="yes"
+        android:autofillHints="name" />
+
+
+</LinearLayout>
